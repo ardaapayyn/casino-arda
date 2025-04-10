@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>ArdaCasino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ArdaCasino</div>
+    <div class="user-info">
+      <span id="username">Utente</span>
+      <span id="saldo">Saldo: 100</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="game-section">
+      <h2>Coinflip</h2>
+      <button onclick="giocaCoinflip()">Gioca</button>
+      <p id="coinflipResult"></p>
+    </div>
+
+    <div class="game-section">
+      <h2>Slot</h2>
+      <button onclick="giocaSlot()">Gira</button>
+      <p id="slotResult"></p>
+    </div>
+  </main>
+
+  <nav>
+    <button>Casino</button>
+    <button>Bets</button>
+    <button>Sports</button>
+    <button>Chat</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

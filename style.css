@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f23;
+  color: white;
+}
+header {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffff;
+}
+.user-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.game-section {
+  background-color: #1f1f35;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  background-color: #00ffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
