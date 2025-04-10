@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d1a;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff55;
+}
+input, button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+button {
+  background: #00ffff;
+  border: none;
+  font-weight: bold;
+}
+a { color: #00ffff; }
+.casino-header {
+  background-color: #1e1e2f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.games {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.game {
+  background: #2a2a3f;
+  padding: 20px;
+  border-radius: 10px;
+}
