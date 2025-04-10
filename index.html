@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArdaCasino Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-screen" id="loginScreen">
+    <h1>ArdaCasino</h1>
+    <input type="text" id="username" placeholder="Nome utente" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Accedi</button>
+    <p id="loginMsg"></p>
+  </div>
+
+  <div class="app hidden" id="casinoApp">
+    <header>
+      <div class="user-info">
+        <span id="userDisplay"></span>
+        <span>Saldo: €<span id="saldoDisplay">0</span></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <button onclick="openGame('slot')">Slot</button>
+        <button onclick="openGame('blackjack')">Blackjack</button>
+        <button onclick="openGame('gratta')">Gratta e Vinci</button>
+        <button onclick="openGame('roulette')">Roulette</button>
+      </nav>
+      <section class="game-area">
+        <div id="slot" class="game hidden">
+          <h2>Slot Machine</h2>
+          <label>Puntata: €<input type="number" id="betSlot" value="10" min="1" /></label>
+          <button onclick="playSlot()">Gira</button>
+          <p id="slotResult"></p>
+        </div>
+        <div id="blackjack" class="game hidden">
+          <h2>Blackjack</h2>
+          <label>Puntata: €<input type="number" id="betBJ" value="10" min="1" /></label>
+          <button onclick="playBlackjack()">Gioca</button>
+          <p id="bjResult"></p>
+        </div>
+        <div id="gratta" class="game hidden">
+          <h2>Gratta e Vinci</h2>
+          <label>Puntata: €<input type="number" id="betGratta" value="10" min="1" /></label>
+          <button onclick="playGratta()">Gratta</button>
+          <p id="grattaResult"></p>
+        </div>
+        <div id="roulette" class="game hidden">
+          <h2>Roulette</h2>
+          <label>Puntata: €<input type="number" id="betRoulette" value="10" min="1" /></label>
+          <button onclick="playRoulette('rosso')">Rosso</button>
+          <button onclick="playRoulette('nero')">Nero</button>
+          <p id="rouletteResult"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
